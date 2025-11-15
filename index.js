@@ -50,10 +50,10 @@ const client = new Client({
 });
 
 // Configuration - Now configurable via environment variables
-let QUARANTINE_ROLE_ID = process.env.QUARANTINE_ROLE_ID || '1414353103842443418';
-const LOGS_CHANNEL_ID = '1432399413912932415'; // Owner logs channel
-const STATS_CHANNEL_ID = '1432441459885342861';
-const MEMBER_INFO_CHANNEL_ID = '1432381607246954637';
+let QUARANTINE_ROLE_ID = process.env.QUARANTINE_ROLE_ID || '1404869933430738974';
+const LOGS_CHANNEL_ID = '1378464794499092581'; // Owner logs channel
+const STATS_CHANNEL_ID = '1406918820165193758';
+const MEMBER_INFO_CHANNEL_ID = '1408878114616115231';
 let ADMIN_QUARANTINE_CHANNEL_ID = process.env.ADMIN_QUARANTINE_CHANNEL_ID || '1410011813398974626'; // Owner Commands channel
 const DEFAULT_QUARANTINE_DURATION = 5; // 5 minutes
 const STRICT_MEMBER_INFO_QUARANTINE_DURATION = 15; // 15 minutes for strict mode
@@ -414,9 +414,9 @@ const PROTECTION_SETTINGS = {
 const userActionTracking = new Map(); // userId -> { actions: [], lastReset: timestamp }
 
 // Interim Role Manager Configuration
-const INTERIM_ROLE_CHANNEL_ID = '1432441459885342861';
-const INTERIM_ROLE_ID = '1415243793300586586';
-const OWNER_CHANNEL_ID = '1432399413912932415'; // Owner Commands channel
+const INTERIM_ROLE_CHANNEL_ID = '1424355607690874940';
+const INTERIM_ROLE_ID = '1409244307767955586';
+const OWNER_CHANNEL_ID = '1410011813398974626'; // Owner Commands channel
 const INTERIM_ROLE_DURATION = 10; // 10 minutes in minutes
 // Store interim role tracking - no limit on uses, but track for timeout management
 const interimRoleTimeouts = new Map(); // userId -> timeoutId for auto-removal
@@ -428,7 +428,7 @@ const serverConfigs = new Map();
 const guildMusicStatus = new Map();
 
 // Permanent music channel configuration
-const PERMANENT_MUSIC_CHANNEL_ID = '1432691105144770570';
+const PERMANENT_MUSIC_CHANNEL_ID = '1408410757200351385';
 
 // Music Manager will be initialized after client is ready
 
